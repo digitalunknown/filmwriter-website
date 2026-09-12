@@ -186,7 +186,6 @@ a {
   margin: 0 var(--page-pad) 96px;
 }
 
-.hero-kicker,
 .feature-index {
   font-size: 12px;
   font-weight: 500;
@@ -196,7 +195,7 @@ a {
 }
 
 .hero h1 {
-  margin-top: 14px;
+  margin-top: 0;
   font-family: var(--font-serif);
   font-size: clamp(44px, 7.2vw, 84px);
   font-weight: 400;
@@ -212,6 +211,10 @@ a {
 }
 
 .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
   margin-top: 28px;
 }
 
