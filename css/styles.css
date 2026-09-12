@@ -205,7 +205,7 @@ a {
 
 .hero-lede {
   margin-top: 22px;
-  max-width: 48ch;
+  max-width: 52ch;
   font-size: clamp(17px, 2vw, 20px);
   color: var(--paper-muted);
 }
@@ -230,12 +230,6 @@ a {
   font-size: 14px;
   font-weight: 500;
   color: var(--paper);
-}
-
-.hero-note {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--paper-muted);
 }
 
 .features {
