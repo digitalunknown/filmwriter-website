@@ -67,6 +67,25 @@ a {
   line-height: 1;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  pointer-events: auto;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--paper-muted);
+  white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link[aria-current="page"] {
+  color: var(--paper);
+}
+
 .get-app {
   position: relative;
   display: inline-block;
@@ -316,6 +335,57 @@ a {
 
 .footer a:hover {
   color: var(--paper);
+}
+
+.legal {
+  padding: 128px 0 80px;
+}
+
+.legal-doc {
+  width: min(680px, calc(100% - 2 * var(--page-pad)));
+  margin: 0 auto;
+}
+
+.legal-doc h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(40px, 6vw, 64px);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.legal-updated {
+  margin-top: 16px;
+  color: var(--paper-faint);
+  font-size: 14px;
+}
+
+.legal-doc h2 {
+  margin-top: 2.2em;
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.legal-doc p,
+.legal-doc li {
+  margin-top: 0.85em;
+  color: var(--paper-muted);
+}
+
+.legal-doc ul {
+  margin: 0.4em 0 0;
+  padding-left: 1.2em;
+}
+
+.legal-doc a {
+  color: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+.legal-doc a:hover {
+  border-bottom-color: var(--paper);
 }
 
 @media (max-width: 860px) {
