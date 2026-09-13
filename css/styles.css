@@ -20,6 +20,7 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
@@ -394,15 +395,27 @@ a {
 }
 
 @media (max-width: 860px) {
+  .nav {
+    position: absolute;
+    background: transparent;
+  }
+
   .hero {
+    min-height: 100vh;
     min-height: 100lvh;
     overflow: visible;
+    background: transparent;
   }
 
   .hero-shader,
   .hero-veil {
-    top: calc(-1 * env(safe-area-inset-top, 0px));
-    height: calc(100% + env(safe-area-inset-top, 0px));
+    top: 0;
+    height: 100vh;
+    height: 100lvh;
+  }
+
+  .hero-shader {
+    opacity: 0.99;
   }
 
   .features {
